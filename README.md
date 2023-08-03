@@ -39,7 +39,6 @@ Users should be able to:
   - The month number is not between 1-12.
   - The year is in the future.
   - The date is invalid e.g. 31/04/1991 (there are 30 days in April).
-- View the optimal layout for the interface depending on their device's screen size.
 - See hover and focus states for all interactive elements on the page.
 
 ## Process
@@ -58,7 +57,6 @@ After submitting the form, the app calculates the age and displays it in the "ye
 - **Accurate Age Calculation**: The app allows users to calculate their age precisely in years, months, and days.
 - **Input Validation**: The app ensures that birth date inputs are valid and within a reasonable range, allowing users to input only numbers (0-9) for day, month, and year.
 - **Error Handling**: The app provides error messages for empty or invalid input fields, which are visually highlighted to guide the user.
-- **Responsive Design**: The app is designed to work seamlessly across different devices and screen sizes.
 
 ### How to Use
 
