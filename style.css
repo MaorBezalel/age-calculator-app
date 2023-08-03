@@ -1,0 +1,181 @@
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('assets/fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('assets/fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+  
+@font-face {
+    font-family: 'Poppins-Italic';
+    src: url('assets/fonts/Poppins-Italic.ttf') format('truetype');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Poppins-BoldItalic';
+    src: url('assets/fonts/Poppins-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+  
+@font-face {
+    font-family: 'Poppins-ExtraBold';
+    src: url('assets/fonts/Poppins-ExtraBold.ttf') format('truetype');
+    font-weight: bolder;
+}
+  
+@font-face {
+    font-family: 'Poppins-ExtraBoldItalic';
+    src: url('assets/fonts/Poppins-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: bolder;
+    font-style: italic;
+}
+
+:root {
+    --clr-purple: hsl(259, 100%, 65%);
+    --clr-light-red: hsl(0, 100%, 67%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-off-white: hsl(0, 0%, 94%);
+    --clr-light-grey: hsl(0, 0%, 86%);
+    --clr-smokey-grey: hsl(0, 1%, 44%);
+    --clr-black: hsl(0, 0%, 8%);
+}
+
+* {
+    font-family: "Poppins-Regular", sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    background-color: var(--clr-off-white);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    background-color: var(--clr-white);
+    width: 820px;
+    height: 700px;
+    border-radius: 1.3rem 1.3rem 10rem 1.3rem;
+    padding: 3.5rem;
+    margin-top: auto;
+}
+
+.date_input_form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.date_input_block {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+}
+
+.date_input_section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.7rem;
+}
+
+.date_input_section > label {
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-family: "Poppins-Bold", sans-serif;
+    color: var(--clr-smokey-grey);
+    letter-spacing: 0.2rem;
+}
+
+.date_input_section > input {
+    font-size: 2rem;
+    font-family: "Poppins-Bold", sans-serif;
+    width: 150px;
+    border-radius: 0.5rem;
+    border: 1px solid var(--clr-light-grey);
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.date_input_section > small {
+    color: var(--clr-light-red);
+    font-family: "Poppins-Italic", sans-serif;
+}
+
+.day_error_input {
+    visibility: hidden;
+}
+
+.month_error_input {
+    visibility: hidden;
+}
+
+.year_error_input {
+    visibility: hidden;
+}
+
+.date_sumbit_block {
+    display: flex;
+    align-items: center;
+}
+
+.date_sumbit_block > hr {
+    border: none;
+    background-color: hsla(0, 0%, 86%, 0.57);
+    height: 2px;
+    width: 100%;
+}
+
+.date_sumbit_button {
+    background-color: var(--clr-purple);
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    cursor: pointer;
+}
+
+.age_output_block {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.age_output_section {
+    font-size: 6.5rem;
+    font-family: "Poppins-ExtraBoldItalic", sans-serif;
+    height: 7.5rem;
+}
+
+.age_output_section > span {
+    font-family: "Poppins-ExtraBoldItalic", sans-serif;
+    color: var(--clr-purple);
+}
+
+footer {
+    margin-top: auto;
+}
+
+.attribution { 
+    font-size: 11px; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body>
+  <main>
+    <form class="date_input_form" autocomplete="off">
+      <div class="date_input_block">
+        <div class="date_input_section">
+          <label for="day_input">Day</label>
+          <input type="text" id="day_input" placeholder="DD" minlength="2" maxlength="2" onkeypress="return allowOnlyPositiveIntegerInput(event)">
+          <small class="day_error_input"></small>
+        </div>
+        <div class="date_input_section">
+          <label for="month_input">Month</label>
+          <input type="text" id="month_input" placeholder="MM" minlength="2" maxlength="2" onkeypress="return allowOnlyPositiveIntegerInput(event)">
+          <small class="month_error_input"></small>
+        </div>
+        <div class="date_input_section"> 
+          <label for="year_input">Year</label>
+          <input type="text" id="year_input" placeholder="YYYY" minlength="4" maxlength="4" onkeypress="return allowOnlyPositiveIntegerInput(event)">
+          <small class="year_error_input"></small>
+        </div>
+      </div>
+      <div class="date_sumbit_block">
+        <hr>
+        <button type="submit" class="date_sumbit_button"><img src="./assets/images/icon-arrow.svg" alt="icon"></button>
+      </div>
+    </form>
+    
+    <div class="age_output_block">
+      <h1 class="age_output_section"><span id="year_output">- -</span> years</h1>
+      <h1 class="age_output_section"><span id="month_output">- -</span> months</h1>
+      <h1 class="age_output_section"><span id="day_output">- -</span> days</h1>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/MaorBezalel" target="_blank">Maor Bezalel</a>.
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
