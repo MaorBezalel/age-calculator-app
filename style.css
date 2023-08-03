@@ -179,3 +179,48 @@ footer {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
+@media screen and (max-width: 600px) {
+  main {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    padding: 2rem;
+  }
+
+  .date_input_block {
+    flex-direction: column;
+    column-gap: 0;
+  }
+
+  .date_input_section {
+    width: 100%;
+  }
+
+  .date_input_section > input {
+    width: 100%;
+  }
+
+  .date_sumbit_block {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .date_sumbit_button {
+    margin: 0 auto;
+  }
+
+  .age_output_block {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .age_output_section {
+    font-size: 3.5rem;
+    height: auto;
+  }
+
+  .age_output_section > span {
+    display: block;
+  }
+}
