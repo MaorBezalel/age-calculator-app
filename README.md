@@ -72,7 +72,7 @@ You can find their website [here](https://www.frontendmentor.io/).
 
 ## License
 
-These solutions are based on Frontend Mentor challenges and are subject to the terms and conditions of the Frontend Mentor License.<br>
+This solution is based on a Frontend Mentor challenge and are subject to the terms and conditions of the Frontend Mentor License.<br>
 Please refer to the license and guidelines on the Frontend Mentor website for more information.<br>
 
 [Frontend Mentor License](https://www.frontendmentor.io/license)
